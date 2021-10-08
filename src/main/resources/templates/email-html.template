@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <link rel='preconnect' href='https://fonts.gstatic.com'/>
+  <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;=swap' rel='stylesheet'/>
+  <h1 style='background-color:#212529; color:#fed136;font-family: Kaushan Script'>
+    Hi ${name}
+  </h1>
+  <body>
+    Jenkins has finished preparing your project, here is a short list of the tasks it has done for you.
+
+	 <ul>
+	 <li>Generated project from a template file</li>
+	 <li>Created a Git Repository.</li>
+	 <li>Pushed the generated project to this repository</li>
+	 <li>Build a dockerfile, based on this project</li>
+	 <li>Pushed this dockerfile to the dockerhub</li>
+	 </ul>
+
+	You can find the project at the following git url : ${gitUrl}
+    <br/><br/>
+    If you wish to pull the created dockerimage from the DockerHub, use the command shown below.
+    <br/><br/>
+    <code>
+      docker pull "${dockerHub}"
+    </code>
+    <br/><br/>
+    To run it, type
+    <br/><br/>
+    <code>
+      docker run -p 8080:8080 ${dockerHub}
+    </code>
+    <br/><br/>
+	To continue with the introduction, why don't you try going to ${gitUrl}, cloning the repo in your favorite ide and make a small change?</br>
+
+	I would advice that you follow the idea in the README file, but any change will do, it's your project after all.</br>
+
+	Once you have done that, push it again, and see what happens.</br>
+	<br/><br/>
+  </body>
+  Best Regards,
+  <br/>
+  Kirkensgaard Examples
+</html>

@@ -1,0 +1,7 @@
+[
+{"name":"Project Name","id":"projectName"},
+{"name":"Group Id","id":"groupId"},
+{"name":"Name","id":"name"},
+{"name":"Project Type","id":"projectType"},
+{"name":"Email", "id":"email"}
+]

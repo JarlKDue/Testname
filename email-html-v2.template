@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <link rel='preconnect' href='https://fonts.gstatic.com'/>
+  <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;=swap' rel='stylesheet'/>
+  <h1 style='background-color:#212529; color:#fed136;font-family: Kaushan Script'>
+    Hi ${name}
+  </h1>
+  <body>
+    Jenkins has finished rebuilding your project, and the changes are now available on Dockerhub.
+    <br/><br/>
+    If you wish to pull the created dockerimage from the DockerHub, use the command shown below.
+    <br/><br/>
+    <code>
+      docker pull "${dockerHub}"
+    </code>
+    <br/><br/>
+    To run it, type
+    <br/><br/>
+    <code>
+      docker run -p 8080:8080 ${dockerHub}
+    </code>
+    <br/><br/>
+  </body>
+  Best Regards,
+  <br/>
+  Kirkensgaard Examples
+</html>
